@@ -1,4 +1,6 @@
-<img src="plugins/flriancu/.claude-plugin/icon.png" alt="A yellow rubber duck on a four-by-four mosaic of green, purple, blue and red squares" width="128">
+<p align="center">
+  <img src="plugins/flriancu/.claude-plugin/icon.png" alt="A yellow rubber duck on a four-by-four mosaic of green, purple, blue and red squares" width="128">
+</p>
 
 # claude-code-setup
 
