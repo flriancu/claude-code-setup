@@ -10,7 +10,7 @@
       "name": "flriancu",
       "source": "./plugins/flriancu",
       "description": "Four skills: requirements kickoff, code style pass, CMake toolchains, adversarial testing.",
-      "version": "1.0.0"
+      "version": "1.0.1"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "flriancu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Four skills: requirements kickoff, code style pass, CMake toolchains, adversarial testing.",
   "author": {
     "name": "flriancu",
