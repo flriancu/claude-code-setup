@@ -4,9 +4,9 @@
 
 # claude-code-setup
 
-My Claude Code setup: four skills packaged as a plugin, and the global instructions file I use
-with them. I wrote the skills from patterns in my own work: the steps I kept explaining to the
-assistant, and the corrections I kept making.
+A Claude Code setup: four skills packaged as a plugin, and a global instructions file that goes
+with them. The skills capture recurring patterns from real work: steps that had to be explained
+to the assistant again and again, and corrections that kept coming back.
 
 ## Install the skills
 
@@ -36,12 +36,12 @@ for example `/flriancu:code-style-pass`.
 | `cmake-toolchains` | Builds a CMake project through its presets on MSVC, MSYS2 clang64 and ucrt64, and WSL; fixes warnings; checks MinGW binaries for runtime DLLs; ports projects that only build with MSVC. |
 | `adversarial-testing` | Tests an app or tool hard with parallel agents, each on its own isolated copy and attacking from a different angle; on request, fixes the findings with regression tests and re-verifies. |
 
-The code style and toolchain skills encode my own conventions and my Windows setup. Read them
+The code style and toolchain skills encode specific conventions and a Windows setup. Read them
 before relying on them elsewhere.
 
 ## Global instructions
 
-`global/CLAUDE.md` holds the rules I want in every session: how I want root causes handled,
+`global/CLAUDE.md` holds the rules that apply in every session: how to handle root causes,
 evidence for claims, when to act and when to only propose, fidelity to other people's content,
 tools, git and writing. Plugins can't install a global `CLAUDE.md`, so copy it by hand:
 
