@@ -134,7 +134,9 @@ every UI language. Is it clear what this is and what to do first? Every promised
 to finish; where you got stuck, misled, or something silently did nothing. Labels, empty states,
 errors, untranslated or truncated text, tap targets, overlap. Keyboard only (focus order, visible
 focus, Escape), screen-reader basics (roles, names), zoom 200%, dark mode, reduced motion.
-Reload, back/forward, what persists. Console errors.
+Reload, back/forward, what persists. Console errors. If the app has user roles or configurations
+(solo, pair, group; admin, member), walk through start to finish once per combination: some
+problems only show over a whole course or workflow, never on a single screen.
 
 **Adversarial UI.** Text fields with hostile input (huge, unicode, RTL, emoji halves, control
 chars, markup/HTML, markdown, formula-like `=cmd`), every form submitted twice/fast. Storage

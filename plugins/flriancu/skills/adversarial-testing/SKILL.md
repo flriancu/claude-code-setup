@@ -50,7 +50,8 @@ config/data files, network endpoints, clipboard/share/download outputs, multiple
 `references/agent-briefs.md` (it has the brief template and a catalogue of angles). Pick 4–6
 angles that fit the project; the usual core:
 
-- first-time user (desktop and phone, every language, keyboard, offline)
+- first-time user (desktop and phone, every language, keyboard, offline; one walkthrough per user
+  role and configuration when the app has them)
 - adversarial UI (hostile input, corrupted storage, URL tricks, races, resize storms, injection)
 - data/inputs/CLI (malformed files, fuzzing, validator-vs-engine consistency, exit codes)
 - outputs and logic (exports round-trip, answers checked against hand derivation or an

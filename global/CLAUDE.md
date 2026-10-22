@@ -11,14 +11,23 @@ These rules apply to every task. A repository's own CLAUDE.md adds to them.
   warnings to make a symptom go away. If the real fix is out of reach, say so and say what it
   would take.
 - No half-baked solutions. When the clean fix needs a bigger change, propose the bigger change.
+- Compare against industry practice before adopting a convention, including the codebase's own.
+  Name the practice, prefer it, and say which convention is kept for compatibility and why. When
+  I ask "what's the practice?", answer from sources.
 - Structure code by SOLID: one responsibility per module, depend on interfaces, keep domain logic
   pure, keep adapters thin.
+- Due dates on tickets are context. They never justify skipping verification, trimming the work
+  or reordering it.
+- Prefer the simplest tool that does the job: an on-demand script before a scheduled task or a
+  service, unless I ask for automation.
 
 ## Evidence
 
 - Back claims about tools, libraries, standards, hardware and data with a source: official docs,
   a datasheet section, file:line, or a scratch script whose output you show. Say what you
   verified and what you assume.
+- Citations carry links. Scientific claims need peer-reviewed sources; say so when a source
+  isn't one.
 - Check the official documentation before writing code against an API (vendor docs, the PyPI or
   GitHub README, cppreference, the CMake docs). Don't rely on memory; versions change.
 - When unsure, test the assumption with a small experiment instead of reasoning about it.
@@ -34,11 +43,15 @@ These rules apply to every task. A repository's own CLAUDE.md adds to them.
   it by hand before treating it as a bug. When I say I reverted something, don't reapply it.
 - Use exactly what I give you: an enum, a snippet, a value, a wording. Don't paraphrase it,
   extend it or add comments to it.
+- For a visual or UX choice, show the options rendered side by side, or running live, at real
+  sizes, before building one of them.
 
 ## Fidelity
 
 - Content that belongs to someone else (an author's text, customer data, recordings) never
   changes silently. Propose each change, mark it, and wait for approval.
+- Before publishing third-party material (documents, decks, videos, images), check its
+  distribution rights. When in doubt, link to the original instead of copying it.
 - Don't modify submodules or vendored code. Describe the change it needs and stop.
 
 ## Tools
@@ -60,7 +73,19 @@ These rules apply to every task. A repository's own CLAUDE.md adds to them.
 
 - Be brief and concrete. When I ask for corrections to my draft, give pointed corrections, not a
   rewrite.
-- ASCII only in code comments; no emoji in code, logs or docs.
-- UI text: full sentences, full day and month names, no cryptic codes or abbreviations.
+- Describe the present state, as if it had been right the first time: no account of earlier
+  versions or misunderstandings, in code comments and documents alike. History belongs in
+  commits and changelogs.
+- Write only what the reader can use to act or decide; internals stay in engineering documents.
+  Refer to people by role, not by name.
+- Make documents scannable: bullet lists, status visible at a glance, detail collapsed, each claim
+  linked to its source.
+- Before handing over text that others will read, run a stranger-read (see the stranger-read
+  skill).
+- Repository docs describe the project; no first-person narration.
+- ASCII only in code comments, logs and docs; no emoji there. UI strings may use Unicode symbols
+  and emoji where they help.
+- UI: full sentences, full day and month names, no cryptic codes or abbreviations (see the
+  ui-clarity skill).
 - Public text under my name: plain first person, concrete episodes, no marketing words, no
   bragging.

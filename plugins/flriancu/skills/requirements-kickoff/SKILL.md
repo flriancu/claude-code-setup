@@ -29,9 +29,10 @@ let's draft a doc with phases"). So get questions and a plan on paper fast, and 
   your options; a skipped number means "your call, tell me what you chose".
 - Cover what matters for this effort: goal and audience; scope and explicit non-goals; inputs and
   outputs (formats, locations); constraints (platform, tools allowed or forbidden, licences,
-  offline use, hardware); quality bar and acceptance test ("how will we know it works"); fidelity
-  (what must never be altered); where things live (repo, paths, remote); delivery (who receives
-  what, how often).
+  offline use, hardware); quality bar and acceptance test ("how will we know it works"); failure
+  behaviour (what happens when each part fails at any moment: a crash, a lost connection, a power
+  cut, one node of several going down); fidelity (what must never be altered); where things live
+  (repo, paths, remote); delivery (who receives what, how often).
 - Run a second, shorter round only for answers that opened new questions. Stop asking once the
   remaining unknowns have safe defaults, and list those defaults instead.
 
