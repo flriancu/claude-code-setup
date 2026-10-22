@@ -1,3 +1,5 @@
+<img src="plugins/flriancu/.claude-plugin/icon.png" alt="A yellow rubber duck on a four-by-four mosaic of green, purple, blue and red squares" width="128">
+
 # claude-code-setup
 
 My Claude Code setup: four skills packaged as a plugin, and the global instructions file I use
@@ -53,6 +55,7 @@ If you already have one, merge the sections you want instead of overwriting it.
 .claude-plugin/marketplace.json     the marketplace: one plugin, "flriancu"
 plugins/flriancu/
   .claude-plugin/plugin.json        the plugin manifest
+  .claude-plugin/icon.png           the plugin icon
   skills/<skill>/SKILL.md           one folder per skill, with its reference files and scripts
 global/CLAUDE.md                    global instructions, copied by hand
 ```
