@@ -8,5 +8,6 @@
   },
   "homepage": "https://github.com/flriancu/claude-code-setup",
   "repository": "https://github.com/flriancu/claude-code-setup",
+  "license": "MIT",
   "keywords": ["skills", "requirements", "code-style", "cmake", "testing"]
 }
