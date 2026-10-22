@@ -1,0 +1,12 @@
+{
+  "name": "flriancu",
+  "version": "1.0.0",
+  "description": "Four skills: requirements kickoff, code style pass, CMake toolchains, adversarial testing.",
+  "author": {
+    "name": "flriancu",
+    "url": "https://github.com/flriancu"
+  },
+  "homepage": "https://github.com/flriancu/claude-code-setup",
+  "repository": "https://github.com/flriancu/claude-code-setup",
+  "keywords": ["skills", "requirements", "code-style", "cmake", "testing"]
+}

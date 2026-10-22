@@ -1,0 +1,16 @@
+{
+  "name": "flriancu-plugins",
+  "description": "Personal Claude Code skills for planning, code style, CMake toolchains and adversarial testing.",
+  "owner": {
+    "name": "flriancu",
+    "url": "https://github.com/flriancu"
+  },
+  "plugins": [
+    {
+      "name": "flriancu",
+      "source": "./plugins/flriancu",
+      "description": "Four skills: requirements kickoff, code style pass, CMake toolchains, adversarial testing.",
+      "version": "1.0.0"
+    }
+  ]
+}
