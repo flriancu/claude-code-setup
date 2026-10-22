@@ -60,6 +60,20 @@ Repos may add release, sanitizer or cross-compile presets on top.
 - **VS Code**: if F7 builds a target that doesn't exist (`ALL_BUILD` under Ninja, `all` under
   MSBuild), fix the build preset or CMake Tools settings rather than adding fake targets.
 
+## Dependencies
+
+- **One integration method per dependency across sibling repos.** If one repo consumes a library
+  as a vcpkg port and another as a git submodule, move both to the same method.
+- **Internal libraries as packages, not submodules**, when the project already uses a package
+  manager: a vcpkg overlay port keeps the source tree free of nested clones.
+- **No hard-coded server addresses.** Derive a dependency's repository URL from the consuming
+  repo's own remote (a relative path such as `../../<owner>/<repo>.git`), so a server move doesn't
+  break builds. No fallback URLs.
+- **Reuse instead of duplicating.** Extend an existing helper rather than copying its logic into
+  a port file; to share a port with a sibling repo, copy it verbatim rather than rewriting it.
+- **Chain toolchains.** When presets use the vcpkg toolchain and the repo has its own toolchain
+  files, load the repo's through `VCPKG_CHAINLOAD_TOOLCHAIN_FILE`.
+
 ## Checking a build
 
 For each relevant preset: configure if needed, build, and run the tests (ctest or the repo's

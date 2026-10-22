@@ -27,6 +27,9 @@ build, and report what changed.
   repo wins; the rules below fill the gaps.
 - Read the C++ standard from CMake and stay within it. In a C++14 project that means no
   `if constexpr`, no `std::filesystem` (use the repo's path-join helper), no structured bindings.
+- A library uses the oldest standard among the projects that consume it, and is built with that
+  standard from the start, so newer constructs (`std::print` from C++23, nested namespace
+  definitions from C++17) can't slip in and surface only at integration time.
 - If `.clang-format` exists, run it on the touched files at the end.
 
 ## Checklist

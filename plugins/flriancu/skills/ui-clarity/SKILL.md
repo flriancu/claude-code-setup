@@ -46,6 +46,11 @@ never seen it, and must never surprise them.
 - When content scrolls, the scrollbar is visible and styled like the site. Prefer scrolling to
   paging buttons. Tables that scroll keep their header row and first column pinned; headers read
   horizontally.
+- Sliders show labelled gradations, snap only to those marks, keep them evenly spaced, respond to
+  the mouse wheel on hover, and start at a sensible default.
+- Every button shares one style. Anything that expands looks expandable. Different actions get
+  different icons: "step forward" must not look like "play".
+- A counter or fraction says what it counts: "tick 10 of 17", not "10 / 17".
 - Check at phone width and at desktop width, with the keyboard, focus visible.
 - Spacing comes from one system: no stray gaps of a few pixels, no lines glued to text boxes,
   nothing showing behind pinned columns.
@@ -55,7 +60,17 @@ never seen it, and must never surprise them.
 - An interaction never moves what the user is looking at. Folding, unfolding, filtering and
   selecting keep every node where it was; if the layout must change, animate it.
 - "Fit" shows all the content, clear of banners and toolbars, and stops at a readable zoom.
+- A graph or canvas resizes with the window, when it shrinks as well as when it grows. Zooming
+  out stops at the fit size, and each zoom step is small.
 - Expensive layout runs off the main thread and is cached, so the view never freezes.
+
+## Logs and replay
+
+- Event logs start collapsed and can be saved to a file with timestamps and everything needed to
+  reproduce a run (version, settings, inputs), one JSON object per line (NDJSON).
+- Loading and replaying a log streams it, so a huge file doesn't freeze the page.
+- Replay steps backwards and forwards and shows the detail of each event. Keep live and replay
+  controls apart, and always show which mode is on screen.
 
 ## Diagrams and graphs
 

@@ -101,6 +101,9 @@ Reports, roadmaps, proposals, wiki pages for stakeholders:
   no account of what was misunderstood earlier.
 - **Traceable claims**: each one links to its source (a repository document, a ticket, a
   measurement).
+- **Concrete capability claims**: each says what it does in plain terms and whether it exists
+  today, as a prototype, or only as a plan. "Lock-free scheduling where possible" or "execution
+  tracing support" is not yet a claim: the reader will ask what it means.
 - **Length**: anything that does not serve the ask is cut.
 
 ### Messages and announcements

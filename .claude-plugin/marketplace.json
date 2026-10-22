@@ -10,7 +10,7 @@
       "name": "flriancu",
       "source": "./plugins/flriancu",
       "description": "Six skills: requirements kickoff, code style pass, CMake toolchains, adversarial testing, stranger-read, UI clarity.",
-      "version": "1.1.0"
+      "version": "1.2.0"
     }
   ]
 }

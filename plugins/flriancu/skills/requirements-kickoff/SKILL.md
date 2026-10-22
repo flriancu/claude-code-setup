@@ -56,13 +56,20 @@ Agreed <YYYY-MM-DD>. This file is the contract; changes are recorded here with a
 - FR-01 ...
 ## Constraints and non-functional requirements
 - NFR-01 ...
-## Acceptance
-How each requirement is verified.
+## Verification
+One row per requirement: how it is verified and where the proof lives.
+| ID | Method (test / inspection / analysis / demonstration) | Evidence (test case, script, file) |
 ## Open questions
 ```
 
 Stable IDs (D-xx, FR-xx, NFR-xx) let later work, commits and reports cite them. Record the user's
 answers in their own terms; don't paraphrase them into something stronger or weaker.
+
+Give every requirement a verification method and an evidence location. The four methods are the
+standard ones from requirements engineering (ISO/IEC/IEEE 29148). Prefer a test. When a
+requirement can only be checked by inspection or analysis ("no direct OS thread calls",
+"scheduling overhead under 100 microseconds per node"), write the check as a script that saves
+its output as evidence, so the proof can be rerun rather than re-argued.
 
 ## 4. Write the plan: phases
 
@@ -83,6 +90,9 @@ Then stop. Report the two files in a few lines and recommend the first phase.
 - A new wish that changes scope goes into REQUIREMENTS.md with its date before you build it. A
   reversed decision is recorded as a reversal; the old line stays.
 - Fix bugs found along the way when the user has said to; otherwise list them.
+- When the last phase is done, or when the user asks, run a gap pass: requirements against code,
+  tests, docs and evidence. Report each gap with its requirement ID, fix them one by one on
+  request, and rerun the evidence scripts.
 - Don't commit or push after each step. Propose a commit when a phase is done; push only when
   asked.
 

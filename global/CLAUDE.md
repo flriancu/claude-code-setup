@@ -16,6 +16,7 @@ These rules apply to every task. A repository's own CLAUDE.md adds to them.
   I ask "what's the practice?", answer from sources.
 - Structure code by SOLID: one responsibility per module, depend on interfaces, keep domain logic
   pure, keep adapters thin.
+- Demos, examples and tests get the same quality bar as the product.
 - Due dates on tickets are context. They never justify skipping verification, trimming the work
   or reordering it.
 - Prefer the simplest tool that does the job: an on-demand script before a scheduled task or a
@@ -60,6 +61,9 @@ These rules apply to every task. A repository's own CLAUDE.md adds to them.
   requirements.txt. Never system Python or throwaway environments.
 - CMake projects: build through the presets (see the cmake-toolchains skill).
 - Show full command output; don't truncate or filter it. Wait for long commands to finish.
+- Run every script you write, in each shell it targets, before handing it over.
+- Before saying a change is ready to test, rebuild, redeploy and confirm that the running
+  instance serves the new version.
 
 ## Git
 
