@@ -65,6 +65,20 @@ These rules apply to every task. A repository's own CLAUDE.md adds to them.
 - Before saying a change is ready to test, rebuild, redeploy and confirm that the running
   instance serves the new version.
 
+## Network
+
+- Judge every site before a request reaches it, including links from search results and
+  documentation. Don't open piracy, warez, adult or known-redirect sites, or a domain that no
+  longer serves its original content, unless I ask. On a managed device every request is logged
+  under my account.
+- A liveness check reads the status code only (HEAD, or `curl -o NUL -w "%{http_code}"`); never
+  save an untrusted page to disk.
+- Requests to live systems have side effects (rate limits, writes, noise on a scraped site): the
+  site a tool scrapes, the API it wraps, a service under test get requests only when the task
+  needs them.
+- Subagents follow these rules; their brief repeats them and names the live systems they may
+  contact.
+
 ## Git
 
 - Don't commit or push unless I ask. Prefer fewer, meaningful commits.

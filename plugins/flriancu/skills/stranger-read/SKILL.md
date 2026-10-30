@@ -38,6 +38,10 @@ they must be able to <decide / do what>.
 Be constructive, but set the bar high: anything vague, inconsistent, unsupported, or hard to act
 on is a finding. Report; don't rewrite the text.
 
+Network: judge every site before a request reaches it, search results included; never open
+piracy, warez, adult or known-redirect sites, or save an untrusted page to disk. Make no requests
+to the live systems the artifact describes <unless the read needs them: say which>.
+
 Checklist:
 <the checklist for this kind of text>
 

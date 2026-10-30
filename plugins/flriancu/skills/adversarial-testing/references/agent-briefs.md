@@ -34,6 +34,10 @@ paths. Commands to run it. What to read first: README, requirements, the key sou
 - Scripts and evidence in <clone>/.scratch/. Stop every server and browser you start — by its
   PID or your own port only, never by process name (other agents' and the user's servers run
   in parallel).
+- Network: judge every site before a request reaches it, search results included; never open
+  piracy, warez, adult or known-redirect sites, and never save an untrusted page to disk.
+  <Name the live systems this project talks to (sites, APIs, services)> — contact them only
+  <when and how, or never>.
 
 ## Ideas (a starting floor — your own hypotheses matter more)
 <Bullets from the angle catalogue, made specific to this project's files and features.>
